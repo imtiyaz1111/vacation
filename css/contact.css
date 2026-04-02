@@ -1,0 +1,326 @@
+/* ================= CONTACT HERO ================= */
+.contact-hero {
+    position: relative;
+    padding: 130px 0 90px;
+    background: url("../image/hero-bg.jpg") no-repeat center center/cover;
+    overflow: hidden;
+}
+
+/* OVERLAY */
+.contact-hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        rgba(0,0,0,0.85) 40%,
+        rgba(0,0,0,0.4)
+    );
+    z-index: 1;
+}
+
+.contact-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ================= CONTENT ================= */
+.contact-center {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* SUBTITLE */
+.sub-title {
+    color: #ff7a00;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* TITLE */
+.contact-center h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #fff;
+    margin: 15px 0;
+}
+
+.contact-center h1 span {
+    color: #ff7a00;
+}
+
+/* DESCRIPTION */
+.contact-center p {
+    color: #ddd;
+    font-size: 16px;
+}
+
+/* ================= BUTTONS ================= */
+.contact-actions {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-call,
+.btn-whatsapp {
+    padding: 12px 26px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+/* CALL */
+.btn-call {
+    background: linear-gradient(135deg, #111, #444);
+    color: #fff;
+}
+
+/* WHATSAPP */
+.btn-whatsapp {
+    background: #25D366;
+    color: #fff;
+}
+
+/* HOVER */
+.btn-call:hover {
+    background: linear-gradient(135deg, #ff7a00, #ff3d00);
+}
+
+.btn-whatsapp:hover {
+    background: #1ebe5d;
+}
+
+/* ================= PREMIUM CONTACT INFO ================= */
+.contact-info-premium {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8fbff, #fff3e8);
+}
+
+/* CARD */
+.info-card-premium {
+    position: relative;
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    overflow: hidden;
+}
+
+/* GRADIENT BORDER EFFECT */
+.info-card-premium::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 1px;
+    background: linear-gradient(135deg, #ff7a00, #ff3d00);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+}
+
+/* ICON */
+.icon-box {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff7a00, #ff3d00);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+.icon-box i {
+    color: #fff;
+    font-size: 22px;
+}
+
+/* TEXT */
+.info-card-premium h5 {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.info-card-premium p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* HOVER EFFECT */
+.info-card-premium:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+}
+
+.info-card-premium:hover .icon-box {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* SOFT GLOW */
+.info-card-premium::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(255,122,0,0.15);
+    filter: blur(60px);
+    top: -40px;
+    right: -40px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.info-card-premium:hover::after {
+    opacity: 1;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .info-card-premium {
+        padding: 25px 20px;
+    }
+}
+/* ================= ENQUIRY PREMIUM ================= */
+.enquiry-premium {
+    padding: 90px 0;
+    background: linear-gradient(135deg, #f8fbff, #fff3e8);
+}
+
+/* WRAPPER */
+.enquiry-wrapper {
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+}
+
+/* ================= LEFT ================= */
+.enquiry-left {
+    position: relative;
+}
+
+/* TEXT */
+.enquiry-text h3 {
+    color: #ff7a00;
+    font-weight: 700;
+}
+
+.enquiry-text p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* IMAGE */
+.enquiry-image {
+    margin-top: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.enquiry-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.enquiry-image:hover img {
+    transform: scale(1.05);
+}
+
+/* ================= FORM ================= */
+.enquiry-form-box {
+    padding: 20px 30px;
+}
+
+.enquiry-form-box h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* FORM GROUP */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* INPUT */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 14px;
+    transition: 0.3s;
+    background: #f9f9f9;
+}
+
+/* FOCUS EFFECT */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff7a00;
+    background: #fff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255,122,0,0.1);
+}
+
+/* BUTTON */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff7a00, #ff3d00);
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(255,122,0,0.3);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 991px) {
+
+    .enquiry-wrapper {
+        padding: 20px;
+    }
+
+    .enquiry-image img {
+        height: 250px;
+    }
+
+    .enquiry-form-box {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .enquiry-image img {
+        height: 200px;
+    }
+}
+
