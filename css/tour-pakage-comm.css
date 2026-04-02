@@ -1,0 +1,93 @@
+/* ================= ITINERARY ================= */
+.itinerary-box {
+    margin-top: 30px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+}
+
+.itinerary-box h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.itinerary-box h3::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #ff7a00;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+/* DAY ITEM */
+.itinerary-item {
+    margin-bottom: 25px;
+}
+
+.itinerary-item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.itinerary-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ================= INCLUDES ================= */
+.includes-box {
+    margin-top: 30px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+}
+
+.includes-box h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.includes-box h3::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #ff7a00;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+/* GRID */
+.includes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+/* ITEM */
+.include-item {
+    font-size: 14px;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.include-item i {
+    color: #00bcd4;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 576px) {
+    .includes-grid {
+        grid-template-columns: 1fr;
+    }
+}
