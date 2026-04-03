@@ -1,148 +1,4 @@
-/* ================= INNER HERO (CAR HIRE) ================= */
-.inner-hero {
-    position: relative;
-    height: 420px;
-    background: url("../image/hero-bg.jpg") no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
 
-/* DARK GRADIENT OVERLAY */
-.inner-hero .overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        120deg,
-        rgba(0, 0, 0, 0.85) 35%,
-        rgba(0, 0, 0, 0.45) 70%
-    );
-    z-index: 1;
-}
-
-/* CENTER CONTENT */
-.inner-content {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    max-width: 750px;
-    margin: auto;
-    text-align: center;
-    animation: fadeUp 1s ease;
-}
-
-/* TITLE */
-.inner-content h1 {
-    font-size: 48px;
-    font-weight: 800;
-    margin-bottom: 12px;
-    line-height: 1.2;
-}
-
-/* HIGHLIGHT TEXT */
-.inner-content h1 span {
-    color: #ff7a00;
-}
-
-/* DESCRIPTION */
-.inner-desc {
-    font-size: 16px;
-    color: #ddd;
-    margin-bottom: 20px;
-    line-height: 1.7;
-}
-
-/* BREADCRUMB */
-.breadcrumb-custom {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(255,255,255,0.08);
-    padding: 8px 18px;
-    border-radius: 50px;
-    backdrop-filter: blur(12px);
-    font-size: 14px;
-    border: 1px solid rgba(255,255,255,0.1);
-}
-
-/* BREADCRUMB LINKS */
-.breadcrumb-custom a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s ease;
-}
-
-/* HOVER EFFECT */
-.breadcrumb-custom a:hover {
-    color: #ff7a00;
-}
-
-/* ACTIVE PAGE */
-.breadcrumb-custom .active {
-    color: #ff7a00;
-    font-weight: 500;
-}
-
-/* ================= ANIMATION ================= */
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(35px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* ================= RESPONSIVE ================= */
-
-/* TABLET */
-@media (max-width: 991px) {
-
-    .inner-hero {
-        height: 320px;
-        padding: 0 20px;
-    }
-
-    .inner-content h1 {
-        font-size: 34px;
-    }
-
-    .inner-desc {
-        font-size: 14px;
-    }
-}
-
-/* MOBILE */
-@media (max-width: 576px) {
-
-    .inner-hero {
-        height: 260px;
-        padding: 0 15px;
-    }
-
-    .inner-content h1 {
-        font-size: 26px;
-    }
-
-    .inner-desc {
-        font-size: 13px;
-    }
-
-    .breadcrumb-custom {
-        font-size: 12px;
-        padding: 6px 12px;
-    }
-}
-
-/* SMALL MOBILE */
-@media (max-width: 400px) {
-    .inner-content h1 {
-        font-size: 22px;
-    }
-}
 /* ================= SECTION ================= */
 /* ================= SECTION ================= */
 .taxi-details-section {
@@ -189,13 +45,14 @@
 }
 
 /* FORM */
+
 .booking-form {
     background: #fff;
     padding: 25px;
     border-radius: 16px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-    position: sticky;
-    top: 100px;
+    position: relative; /* changed */
+    top: 0; /* removed sticky */
 }
 
 .booking-form h3 {
@@ -260,6 +117,65 @@
 
 .whatsapp-btn {
     background: #25d366;
+}
+
+
+/* RIGHT SIDE IMAGE CARD */
+.side-image-card {
+    position: relative;
+    margin-top: 20px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* IMAGE */
+.side-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
+}
+
+/* HOVER ZOOM */
+.side-image-card:hover img {
+    transform: scale(1.05);
+}
+
+/* OVERLAY */
+.side-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+
+/* BUTTON */
+.side-image-overlay a {
+    display: inline-block;
+    background: linear-gradient(90deg, #00bcd4, #ff7a00);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.side-image-overlay a:hover {
+    transform: translateY(-2px);
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    .side-image-card img {
+        height: 200px;
+    }
 }
 
 /* ================= RESPONSIVE ================= */

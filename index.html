@@ -83,30 +83,31 @@
                     <h5>Book Your Taxi Now</h5>
                     <p>Fill the form and we’ll get back to you instantly</p>
                 </div>
+<form action="./contact-form.php" method="POST" class="row g-3">
 
-                <form class="row g-3">
+    <div class="col-lg-3 col-md-6">
+        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+    </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <input type="text" class="form-control" placeholder="Full Name">
-                    </div>
+    <div class="col-lg-3 col-md-6">
+        <input type="tel" name="phone" class="form-control" placeholder="Phone No." required>
+    </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <input type="text" class="form-control" placeholder="Phone No.">
-                    </div>
+    <div class="col-lg-3 col-md-6">
+        <input type="email" name="email" class="form-control" placeholder="Email Id" required>
+    </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <input type="email" class="form-control" placeholder="Email Id">
-                    </div>
+    <div class="col-lg-2 col-md-6">
+        <input type="text" name="message" class="form-control" placeholder="Message">
+    </div>
 
-                    <div class="col-lg-2 col-md-6">
-                        <input type="text" class="form-control" placeholder="Message">
-                    </div>
+    <div class="col-lg-1 col-md-12 d-grid">
+        <button type="submit" class="btn btn-submit">
+            Send
+        </button>
+    </div>
 
-                    <div class="col-lg-1 col-md-12 d-grid">
-                        <button class="btn btn-submit">Send</button>
-                    </div>
-
-                </form>
+</form>
 
             </div>
 
