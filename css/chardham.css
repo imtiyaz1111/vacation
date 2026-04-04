@@ -1,0 +1,243 @@
+/* ================= SECTION ================= */
+.chardham-section {
+    padding: 80px 0;
+    position: relative;
+
+    /* BACKGROUND IMAGE */
+    background: url('../image/Char-bg-img.png') no-repeat center center/cover;
+
+    /* LIGHT OVERLAY for readability */
+    z-index: 1;
+}
+
+/* OVERLAY */
+.chardham-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.866); /* adjust opacity if needed */
+    z-index: -1;
+}
+
+/* HEADING */
+.section-heading .tag {
+    display: inline-block;
+    background: #ff7a00;
+    color: #fff;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.section-heading h2 span {
+    color: #ff7a00;
+}
+
+.section-heading p {
+    max-width: 700px;
+    margin: auto;
+    color: #666;
+}
+
+/* CONTENT */
+.chardham-content p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* FEATURES */
+.chardham-features {
+    margin-top: 20px;
+}
+
+.chardham-features .feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.chardham-features i {
+    color: #ff7a00;
+}
+
+/* RIGHT CARD */
+.chardham-card {
+    background: #fff;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* PREMIUM GLASS EFFECT (optional upgrade) */
+.chardham-card {
+    backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.9);
+}
+
+.chardham-card h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.chardham-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* BUTTON */
+.btn-primary-custom {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #ff7a00;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary-custom:hover {
+    background: #e66a00;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .chardham-card {
+        margin-top: 20px;
+    }
+}
+/* ================= ROUTE SECTION ================= */
+.route-section {
+    padding: 80px 0;
+    background: #f9fafc;
+}
+
+/* HEADING */
+.routes-box h2 {
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.routes-box p {
+    color: #666;
+    margin-top: 10px;
+}
+
+/* CARD */
+.route-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 16px;
+    position: relative;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+/* LEFT ACCENT */
+.route-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20px;
+    height: 60%;
+    width: 5px;
+    background: linear-gradient(#00bcd4, #ff7a00);
+    border-radius: 10px;
+}
+
+/* POPULAR BADGE */
+.route-card .badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ff7a00;
+    color: #fff;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+/* HOVER */
+.route-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* TITLE */
+.route-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* DESC */
+.route-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* ACTIONS */
+.route-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.route-actions a {
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 25px;
+    font-size: 13px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* BUTTON COLORS */
+.btn-call { background: #ff7a00; }
+.btn-whatsapp { background: #25d366; }
+.btn-book { background: linear-gradient(90deg,#00bcd4,#ff7a00); }
+
+/* HOVER */
+.btn-call:hover { background: #e66a00; }
+.btn-whatsapp:hover { background: #1ebe5d; }
+.btn-book:hover { opacity: 0.9; }
+/* VIEW DETAILS BUTTON */
+.btn-view {
+    background: transparent;
+    color: #333 !important;
+    border: 1px solid #ddd !important;
+}
+
+/* HOVER EFFECT */
+.btn-view:hover {
+    background: #000 !important;
+    color: #fff !important;
+    border-color: #000 !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .route-card {
+        padding: 20px;
+    }
+
+    .routes-box h2 {
+        font-size: 26px;
+    }
+}
